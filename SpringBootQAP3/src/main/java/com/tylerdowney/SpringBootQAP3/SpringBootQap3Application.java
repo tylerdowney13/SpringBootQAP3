@@ -1,5 +1,3 @@
-// Test
-
 package com.tylerdowney.SpringBootQAP3;
 
 import org.springframework.boot.SpringApplication;
