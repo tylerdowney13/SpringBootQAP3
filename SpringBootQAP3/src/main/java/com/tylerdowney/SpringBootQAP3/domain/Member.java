@@ -8,7 +8,7 @@ public class Member {
 
     // Initialize ID
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     // Initialize other instance variables
@@ -16,13 +16,15 @@ public class Member {
     private String memberLastName;
     private String memberAddress;
     private String memberEmail;
-    private long membershipId;
     private String membershipStartDate;
     private int membershipDuration;
     private String membershipType;
+
+    @ManyToMany
     private List<Tournament> tournaments;
 
     // Getters and Setters
+
     public long getId() {
         return id;
     }
@@ -61,14 +63,6 @@ public class Member {
 
     public void setMemberEmail(String memberEmail) {
         this.memberEmail = memberEmail;
-    }
-
-    public long getMembershipId() {
-        return membershipId;
-    }
-
-    public void setMembershipId(long membershipId) {
-        this.membershipId = membershipId;
     }
 
     public String getMembershipStartDate() {

@@ -7,5 +7,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "tournament", path = "tournament")
-public interface TournamentRepository {
+public interface TournamentRepository extends JpaRepository<Tournament, Long> {
 }

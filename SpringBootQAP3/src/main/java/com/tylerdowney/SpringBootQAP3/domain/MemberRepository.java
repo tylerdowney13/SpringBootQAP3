@@ -8,5 +8,5 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "member", path = "member")
 public interface MemberRepository extends JpaRepository<Member, Long> {
-    List<Member> findByLastName(@Param("memberLastName") String memberLastName);
+    List<Member> findByMemberLastName(@Param("memberLastName") String memberLastName);
 }
