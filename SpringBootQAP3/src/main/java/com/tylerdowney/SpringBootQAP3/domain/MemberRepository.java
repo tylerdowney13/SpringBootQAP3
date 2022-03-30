@@ -9,4 +9,12 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "member", path = "member")
 public interface MemberRepository extends JpaRepository<Member, Long> {
     List<Member> findByMemberLastName(@Param("memberLastName") String memberLastName);
+    List<Member> findByMemberFirstName(@Param("memberFirstName") String memberFirstName);
+    List<Member> findByMemberAddress(@Param("memberAddress") String memberAddress);
+    List<Member> findByMemberEmail(@Param("memberEmail") String memberEmail);
+    List<Member> findByMembershipStartDate(@Param("membershipStartDate") String membershipStartDate);
+    List<Member> findByMembershipDuration(@Param("membershipDuration") int membershipDuration);
+    List<Member> findByMembershipType(@Param("membershipType") String membershipType);
+    List<Member> findByTournaments_Id(@Param("id") long id);
+
 }

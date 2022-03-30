@@ -8,4 +8,8 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "tournament", path = "tournament")
 public interface TournamentRepository extends JpaRepository<Tournament, Long> {
+    List<Tournament> findByTournamentStartDate(@Param("tournamentStartDate") String tournamentStartDate);
+    List<Tournament> findByTournamentEndDate(@Param("tournamentEndDate") String tournamentEndDate);
+    List<Tournament> findByTournamentLocation(@Param("tournamentLocation") String tournamentLocation);
+    List<Tournament> findByTournamentCashPrizeAmount(@Param("tournamentCashPrizeAmount") double tournamentCashPrizeAmount);
 }

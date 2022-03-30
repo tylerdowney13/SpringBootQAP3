@@ -16,9 +16,6 @@ public class Tournament {
     private String tournamentLocation;
     private double tournamentCashPrizeAmount;
 
-    @ManyToMany
-    private List<Member> tournamentMembers;
-
     // Getters and Setters
 
     public long getId() {
@@ -59,13 +56,5 @@ public class Tournament {
 
     public void setTournamentCashPrizeAmount(double tournamentCashPrizeAmount) {
         this.tournamentCashPrizeAmount = tournamentCashPrizeAmount;
-    }
-
-    public List<Member> getTournamentMembers() {
-        return tournamentMembers;
-    }
-
-    public void setTournamentMembers(List<Member> tournamentMembers) {
-        this.tournamentMembers = tournamentMembers;
     }
 }
