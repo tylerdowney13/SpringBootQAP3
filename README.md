@@ -1,5 +1,5 @@
 # SpringBootQAP3
-SpringBoot project for Software Architecture, Design, and Testing
+SpringBoot API project for Software Architecture, Design, and Testing. This API is built from two classes - Member and Tournament. Members can sign up for tournaments.
 
 ## Project Setup
 Java Version 11
