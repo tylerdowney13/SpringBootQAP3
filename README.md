@@ -18,7 +18,7 @@ Java Version 11
 - Database name: golf_club
 - Datasource driver class: com.mysql.jdbc.Driver
 
-## Supported Search APIs
+## Supported Search API Queries
 ### Member
 - http://localhost:8080/member
 - http://localhost:8080/member/{id}
